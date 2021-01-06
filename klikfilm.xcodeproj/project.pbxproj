@@ -52,6 +52,7 @@
 		AA78C23025A5C20F00AFB3FE /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78C22A25A5C20F00AFB3FE /* MovieView.xib */; };
 		AA78C23625A606FA00AFB3FE /* MovieInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C23525A606FA00AFB3FE /* MovieInfoCell.swift */; };
 		AA78C23A25A6070500AFB3FE /* MovieInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78C23925A6070500AFB3FE /* MovieInfoCell.xib */; };
+		AABE85F025A61E5F00E6F580 /* KFImageBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE85EF25A61E5F00E6F580 /* KFImageBlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		AA78C22A25A5C20F00AFB3FE /* MovieView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieView.xib; sourceTree = "<group>"; };
 		AA78C23525A606FA00AFB3FE /* MovieInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoCell.swift; sourceTree = "<group>"; };
 		AA78C23925A6070500AFB3FE /* MovieInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoCell.xib; sourceTree = "<group>"; };
+		AABE85EF25A61E5F00E6F580 /* KFImageBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImageBlurView.swift; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +221,7 @@
 		AA78C1CA25A57FA800AFB3FE /* app-template */ = {
 			isa = PBXGroup;
 			children = (
+				AABE85EE25A61E4600E6F580 /* KFImageView */,
 				AA78C1CD25A57FDB00AFB3FE /* KFFont */,
 				AA78C1CC25A57FCF00AFB3FE /* KFLabel */,
 				AA78C1CB25A57FC400AFB3FE /* KFColor */,
@@ -346,6 +349,14 @@
 				AA78C23925A6070500AFB3FE /* MovieInfoCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		AABE85EE25A61E4600E6F580 /* KFImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AABE85EF25A61E5F00E6F580 /* KFImageBlurView.swift */,
+			);
+			path = KFImageView;
 			sourceTree = "<group>";
 		};
 		B942BD8A21089299A6D99B60 /* Frameworks */ = {
@@ -507,6 +518,7 @@
 				AA78C1E925A5878800AFB3FE /* LocalizableDelegate.swift in Sources */,
 				AA78C1E525A5877A00AFB3FE /* Localizable.swift in Sources */,
 				AA78C20125A58AAB00AFB3FE /* HTTPRequestMethod.swift in Sources */,
+				AABE85F025A61E5F00E6F580 /* KFImageBlurView.swift in Sources */,
 				AA78C1EF25A587FF00AFB3FE /* Debugger.swift in Sources */,
 				AA78C20525A58B2100AFB3FE /* Constant.swift in Sources */,
 				AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */,
