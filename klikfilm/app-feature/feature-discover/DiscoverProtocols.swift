@@ -18,6 +18,7 @@ protocol DiscoverPresenterToView: class {
     func showLoaderIndicator()
     func dismissLoaderIndicator()
     func reloadCollectionView()
+    func updateViewCell(indexPaths: [IndexPath])
 }
 
 // MARK: Interactor -
@@ -42,6 +43,7 @@ protocol DiscoverViewToPresenter: class {
     func didLoad()
     func numberOfItemsInSection() -> Int
     func cellForItemAt(indexPath: IndexPath) -> MovieItem
+    func requestGetMovies()
 }
 
 protocol DiscoverInteractorToPresenter: class {

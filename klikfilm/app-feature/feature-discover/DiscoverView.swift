@@ -26,10 +26,21 @@ class DiscoverView: UIViewController, DiscoverPresenterToView {
         presenter?.didLoad()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+            return .darkContent
+        }
+        return .default
+    }
+    
     func setupViews() {
+        navigationController?.navigationBar.isHidden = false
+        title = LTitlePage.page_discover.localized
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(DiscoverPosterCell.source.nib, forCellWithReuseIdentifier: DiscoverPosterCell.source.identifier)
+        collectionView.backgroundColor = KFColor.mine_shaft.get()
     }
     
     func showAlert(title: String, message: String, okCompletion: (() -> Void)?) {
@@ -57,6 +68,10 @@ class DiscoverView: UIViewController, DiscoverPresenterToView {
     func reloadCollectionView() {
         collectionView.reloadData()
     }
+    
+    func updateViewCell(indexPaths: [IndexPath]) {
+        collectionView.insertItems(at: indexPaths)
+    }
 }
 
 extension DiscoverView: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -72,13 +87,22 @@ extension DiscoverView: UICollectionViewDataSource, UICollectionViewDelegate {
         
         return UICollectionViewCell()
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        
+        if offsetY > contentHeight - scrollView.frame.height {
+            presenter?.requestGetMovies()
+        }
+    }
 }
 
 extension DiscoverView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screen = UIScreen.main.bounds
-        let height: CGFloat = 400
-        let width: CGFloat = screen.width / 3
+        let height: CGFloat = screen.height / 2.9
+        let width: CGFloat = screen.width / 3.2
         return CGSize(width: width, height: height)
     }
 }

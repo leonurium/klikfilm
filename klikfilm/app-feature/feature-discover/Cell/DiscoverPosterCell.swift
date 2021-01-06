@@ -32,12 +32,12 @@ class DiscoverPosterCell: UICollectionViewCell {
     private func setupViews() {
         lbl_title.numberOfLines = 0
         lbl_title.textAlignment = .center
-        lbl_title.setFontSize(18)
-        lbl_title.textColor = KFColor.buttercup.get()
+        lbl_title.setFontSize(12)
+        lbl_title.textColor = KFColor.white.get()
         
         lbl_body.numberOfLines = 0
         lbl_body.textAlignment = .center
-        lbl_body.setFontSize(16)
+        lbl_body.setFontSize(12)
         lbl_body.textColor = KFColor.buttercup.get()
     }
     
