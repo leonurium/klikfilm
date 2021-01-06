@@ -31,6 +31,12 @@
 		AA78C1D925A5801600AFB3FE /* KFLabelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1D825A5801600AFB3FE /* KFLabelNote.swift */; };
 		AA78C1DC25A5802B00AFB3FE /* KFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1DB25A5802B00AFB3FE /* KFColor.swift */; };
 		AA78C1E025A5807200AFB3FE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1DF25A5807200AFB3FE /* String+Ext.swift */; };
+		AA78C1E525A5877A00AFB3FE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1E425A5877A00AFB3FE /* Localizable.swift */; };
+		AA78C1E925A5878800AFB3FE /* LocalizableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1E825A5878800AFB3FE /* LocalizableDelegate.swift */; };
+		AA78C1EC25A5879F00AFB3FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA78C1EB25A5879F00AFB3FE /* Localizable.strings */; };
+		AA78C1EF25A587FF00AFB3FE /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1EE25A587FF00AFB3FE /* Debugger.swift */; };
+		AA78C1F225A5881D00AFB3FE /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1F125A5881D00AFB3FE /* Identifier.swift */; };
+		AA78C1F525A5885200AFB3FE /* UIimage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1F425A5885200AFB3FE /* UIimage+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +67,12 @@
 		AA78C1D825A5801600AFB3FE /* KFLabelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFLabelNote.swift; sourceTree = "<group>"; };
 		AA78C1DB25A5802B00AFB3FE /* KFColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFColor.swift; sourceTree = "<group>"; };
 		AA78C1DF25A5807200AFB3FE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		AA78C1E425A5877A00AFB3FE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		AA78C1E825A5878800AFB3FE /* LocalizableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableDelegate.swift; sourceTree = "<group>"; };
+		AA78C1EB25A5879F00AFB3FE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AA78C1EE25A587FF00AFB3FE /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
+		AA78C1F125A5881D00AFB3FE /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		AA78C1F425A5885200AFB3FE /* UIimage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Ext.swift"; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +109,7 @@
 		AA78C15725A575E400AFB3FE /* klikfilm */ = {
 			isa = PBXGroup;
 			children = (
+				AA78C1E225A5875D00AFB3FE /* app-common */,
 				AA78C1DE25A5806000AFB3FE /* app-extensions */,
 				AA78C1CA25A57FA800AFB3FE /* app-template */,
 				AA78C19025A579FC00AFB3FE /* app-feature */,
@@ -209,8 +222,29 @@
 			isa = PBXGroup;
 			children = (
 				AA78C1DF25A5807200AFB3FE /* String+Ext.swift */,
+				AA78C1F425A5885200AFB3FE /* UIimage+Ext.swift */,
 			);
 			path = "app-extensions";
+			sourceTree = "<group>";
+		};
+		AA78C1E225A5875D00AFB3FE /* app-common */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1E325A5876800AFB3FE /* Localize */,
+				AA78C1EE25A587FF00AFB3FE /* Debugger.swift */,
+				AA78C1F125A5881D00AFB3FE /* Identifier.swift */,
+			);
+			path = "app-common";
+			sourceTree = "<group>";
+		};
+		AA78C1E325A5876800AFB3FE /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1E425A5877A00AFB3FE /* Localizable.swift */,
+				AA78C1E825A5878800AFB3FE /* LocalizableDelegate.swift */,
+				AA78C1EB25A5879F00AFB3FE /* Localizable.strings */,
+			);
+			path = Localize;
 			sourceTree = "<group>";
 		};
 		B942BD8A21089299A6D99B60 /* Frameworks */ = {
@@ -290,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA78C16525A575E500AFB3FE /* LaunchScreen.storyboard in Resources */,
+				AA78C1EC25A5879F00AFB3FE /* Localizable.strings in Resources */,
 				AA78C1AD25A57D1C00AFB3FE /* GoogleService-Info.plist in Resources */,
 				AA78C1C425A57DD300AFB3FE /* DiscoverPosterCell.xib in Resources */,
 				AA78C19D25A57A3A00AFB3FE /* DiscoverView.xib in Resources */,
@@ -350,6 +385,7 @@
 				AA78C15925A575E400AFB3FE /* AppDelegate.swift in Sources */,
 				AA78C19A25A57A3A00AFB3FE /* DiscoverProtocols.swift in Sources */,
 				AA78C1A425A57AB500AFB3FE /* AppDelegates.swift in Sources */,
+				AA78C1F225A5881D00AFB3FE /* Identifier.swift in Sources */,
 				AA78C1D925A5801600AFB3FE /* KFLabelNote.swift in Sources */,
 				AA78C15B25A575E400AFB3FE /* SceneDelegate.swift in Sources */,
 				AA78C19B25A57A3A00AFB3FE /* DiscoverInteractor.swift in Sources */,
@@ -358,7 +394,11 @@
 				AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */,
 				AA78C1DC25A5802B00AFB3FE /* KFColor.swift in Sources */,
 				AA78C1C025A57DC400AFB3FE /* DiscoverPosterCell.swift in Sources */,
+				AA78C1F525A5885200AFB3FE /* UIimage+Ext.swift in Sources */,
 				AA78C19C25A57A3A00AFB3FE /* DiscoverView.swift in Sources */,
+				AA78C1E925A5878800AFB3FE /* LocalizableDelegate.swift in Sources */,
+				AA78C1E525A5877A00AFB3FE /* Localizable.swift in Sources */,
+				AA78C1EF25A587FF00AFB3FE /* Debugger.swift in Sources */,
 				AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */,
 				AA78C1D325A57FFE00AFB3FE /* KFLabelTitle.swift in Sources */,
 				AA78C19825A57A3A00AFB3FE /* DiscoverPresenter.swift in Sources */,

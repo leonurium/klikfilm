@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  klikfilm
+
+  Created by Rangga Leo on 06/01/21.
+  
+*/
+
+// MARK: - Tittle Alert
+"information" = "Information";
+"success" = "Success!";
+"warning" = "Warning";
+"Error" = "Oops!";
+
+// MARK: - Error
+"something_wrong" = "Looks like something went wrong";
