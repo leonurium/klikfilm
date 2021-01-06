@@ -3,17 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A7942B3B270519B9E3FE3721 /* Pods_klikfilm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD9137FE8BA8CF41E1A51ED /* Pods_klikfilm.framework */; };
 		AA78C15925A575E400AFB3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C15825A575E400AFB3FE /* AppDelegate.swift */; };
 		AA78C15B25A575E400AFB3FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C15A25A575E400AFB3FE /* SceneDelegate.swift */; };
-		AA78C15D25A575E400AFB3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C15C25A575E400AFB3FE /* ViewController.swift */; };
-		AA78C16025A575E400AFB3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78C15E25A575E400AFB3FE /* Main.storyboard */; };
 		AA78C16225A575E500AFB3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA78C16125A575E500AFB3FE /* Assets.xcassets */; };
 		AA78C16525A575E500AFB3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78C16325A575E500AFB3FE /* LaunchScreen.storyboard */; };
+		AA78C19825A57A3A00AFB3FE /* DiscoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C19225A57A3A00AFB3FE /* DiscoverPresenter.swift */; };
+		AA78C19925A57A3A00AFB3FE /* DiscoverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C19325A57A3A00AFB3FE /* DiscoverRouter.swift */; };
+		AA78C19A25A57A3A00AFB3FE /* DiscoverProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C19425A57A3A00AFB3FE /* DiscoverProtocols.swift */; };
+		AA78C19B25A57A3A00AFB3FE /* DiscoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C19525A57A3A00AFB3FE /* DiscoverInteractor.swift */; };
+		AA78C19C25A57A3A00AFB3FE /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C19625A57A3A00AFB3FE /* DiscoverView.swift */; };
+		AA78C19D25A57A3A00AFB3FE /* DiscoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78C19725A57A3A00AFB3FE /* DiscoverView.xib */; };
+		AA78C1A125A57AA800AFB3FE /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A025A57AA800AFB3FE /* CompositeAppDelegate.swift */; };
+		AA78C1A425A57AB500AFB3FE /* AppDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A325A57AB500AFB3FE /* AppDelegates.swift */; };
+		AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A625A57AC300AFB3FE /* CompositeSceneDelegate.swift */; };
+		AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */; };
+		AA78C1AD25A57D1C00AFB3FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA78C1AC25A57D1C00AFB3FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +31,20 @@
 		AA78C15525A575E400AFB3FE /* klikfilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = klikfilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA78C15825A575E400AFB3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA78C15A25A575E400AFB3FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA78C15C25A575E400AFB3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA78C15F25A575E400AFB3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA78C16125A575E500AFB3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA78C16425A575E500AFB3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA78C16625A575E500AFB3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA78C19225A57A3A00AFB3FE /* DiscoverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPresenter.swift; sourceTree = "<group>"; };
+		AA78C19325A57A3A00AFB3FE /* DiscoverRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRouter.swift; sourceTree = "<group>"; };
+		AA78C19425A57A3A00AFB3FE /* DiscoverProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverProtocols.swift; sourceTree = "<group>"; };
+		AA78C19525A57A3A00AFB3FE /* DiscoverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverInteractor.swift; sourceTree = "<group>"; };
+		AA78C19625A57A3A00AFB3FE /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		AA78C19725A57A3A00AFB3FE /* DiscoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverView.xib; sourceTree = "<group>"; };
+		AA78C1A025A57AA800AFB3FE /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
+		AA78C1A325A57AB500AFB3FE /* AppDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegates.swift; sourceTree = "<group>"; };
+		AA78C1A625A57AC300AFB3FE /* CompositeSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSceneDelegate.swift; sourceTree = "<group>"; };
+		AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegates.swift; sourceTree = "<group>"; };
+		AA78C1AC25A57D1C00AFB3FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,15 +81,64 @@
 		AA78C15725A575E400AFB3FE /* klikfilm */ = {
 			isa = PBXGroup;
 			children = (
-				AA78C15825A575E400AFB3FE /* AppDelegate.swift */,
-				AA78C15A25A575E400AFB3FE /* SceneDelegate.swift */,
-				AA78C15C25A575E400AFB3FE /* ViewController.swift */,
-				AA78C15E25A575E400AFB3FE /* Main.storyboard */,
-				AA78C16125A575E500AFB3FE /* Assets.xcassets */,
-				AA78C16325A575E500AFB3FE /* LaunchScreen.storyboard */,
+				AA78C19025A579FC00AFB3FE /* app-feature */,
+				AA78C18D25A5788100AFB3FE /* app-metadata */,
+				AA78C18C25A5786A00AFB3FE /* app-cycle */,
 				AA78C16625A575E500AFB3FE /* Info.plist */,
 			);
 			path = klikfilm;
+			sourceTree = "<group>";
+		};
+		AA78C18C25A5786A00AFB3FE /* app-cycle */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C19F25A57A8500AFB3FE /* Composite */,
+				AA78C15825A575E400AFB3FE /* AppDelegate.swift */,
+				AA78C15A25A575E400AFB3FE /* SceneDelegate.swift */,
+			);
+			path = "app-cycle";
+			sourceTree = "<group>";
+		};
+		AA78C18D25A5788100AFB3FE /* app-metadata */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1AC25A57D1C00AFB3FE /* GoogleService-Info.plist */,
+				AA78C16125A575E500AFB3FE /* Assets.xcassets */,
+				AA78C16325A575E500AFB3FE /* LaunchScreen.storyboard */,
+			);
+			path = "app-metadata";
+			sourceTree = "<group>";
+		};
+		AA78C19025A579FC00AFB3FE /* app-feature */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C19125A57A1900AFB3FE /* feature-discover */,
+			);
+			path = "app-feature";
+			sourceTree = "<group>";
+		};
+		AA78C19125A57A1900AFB3FE /* feature-discover */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C19225A57A3A00AFB3FE /* DiscoverPresenter.swift */,
+				AA78C19325A57A3A00AFB3FE /* DiscoverRouter.swift */,
+				AA78C19425A57A3A00AFB3FE /* DiscoverProtocols.swift */,
+				AA78C19525A57A3A00AFB3FE /* DiscoverInteractor.swift */,
+				AA78C19625A57A3A00AFB3FE /* DiscoverView.swift */,
+				AA78C19725A57A3A00AFB3FE /* DiscoverView.xib */,
+			);
+			path = "feature-discover";
+			sourceTree = "<group>";
+		};
+		AA78C19F25A57A8500AFB3FE /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1A025A57AA800AFB3FE /* CompositeAppDelegate.swift */,
+				AA78C1A325A57AB500AFB3FE /* AppDelegates.swift */,
+				AA78C1A625A57AC300AFB3FE /* CompositeSceneDelegate.swift */,
+				AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 		B942BD8A21089299A6D99B60 /* Frameworks */ = {
@@ -88,7 +155,6 @@
 				BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */,
 				05EF8FF19DD3FCC2B1189758 /* Pods-klikfilm.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,8 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA78C16525A575E500AFB3FE /* LaunchScreen.storyboard in Resources */,
+				AA78C1AD25A57D1C00AFB3FE /* GoogleService-Info.plist in Resources */,
+				AA78C19D25A57A3A00AFB3FE /* DiscoverView.xib in Resources */,
 				AA78C16225A575E500AFB3FE /* Assets.xcassets in Resources */,
-				AA78C16025A575E400AFB3FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +273,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA78C15D25A575E400AFB3FE /* ViewController.swift in Sources */,
 				AA78C15925A575E400AFB3FE /* AppDelegate.swift in Sources */,
+				AA78C19A25A57A3A00AFB3FE /* DiscoverProtocols.swift in Sources */,
+				AA78C1A425A57AB500AFB3FE /* AppDelegates.swift in Sources */,
 				AA78C15B25A575E400AFB3FE /* SceneDelegate.swift in Sources */,
+				AA78C19B25A57A3A00AFB3FE /* DiscoverInteractor.swift in Sources */,
+				AA78C1A125A57AA800AFB3FE /* CompositeAppDelegate.swift in Sources */,
+				AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */,
+				AA78C19C25A57A3A00AFB3FE /* DiscoverView.swift in Sources */,
+				AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */,
+				AA78C19825A57A3A00AFB3FE /* DiscoverPresenter.swift in Sources */,
+				AA78C19925A57A3A00AFB3FE /* DiscoverRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AA78C15E25A575E400AFB3FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA78C15F25A575E400AFB3FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA78C16325A575E500AFB3FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,14 +426,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VC83XAQ3UM;
 				INFOPLIST_FILE = klikfilm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranggaleoo.klikfilm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,14 +448,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VC83XAQ3UM;
 				INFOPLIST_FILE = klikfilm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranggaleoo.klikfilm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

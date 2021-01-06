@@ -6,6 +6,7 @@ target 'klikfilm' do
   use_frameworks!
 
   # Pods for klikfilm
+  pod 'Siren'
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'

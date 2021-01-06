@@ -72,11 +72,13 @@ PODS:
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - Siren (5.6.2)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
   - IQKeyboardManagerSwift
+  - Siren
 
 SPEC REPOS:
   trunk:
@@ -92,6 +94,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - nanopb
     - PromisesObjC
+    - Siren
 
 SPEC CHECKSUMS:
   Firebase: 78e8dd2e39d653de6270432ad84fe8b59f7bf4e8
@@ -106,7 +109,8 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  Siren: 4f98be44f7d66e80513dc3e7061898cd63935bd5
 
-PODFILE CHECKSUM: 07d3539f2f88d375d19f849b5e5001cf7d1f427f
+PODFILE CHECKSUM: f4c755a9e541d4546cc51d601ceff560d1b3835c
 
 COCOAPODS: 1.10.0
