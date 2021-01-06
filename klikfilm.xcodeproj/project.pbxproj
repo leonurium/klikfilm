@@ -37,6 +37,9 @@
 		AA78C1EF25A587FF00AFB3FE /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1EE25A587FF00AFB3FE /* Debugger.swift */; };
 		AA78C1F225A5881D00AFB3FE /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1F125A5881D00AFB3FE /* Identifier.swift */; };
 		AA78C1F525A5885200AFB3FE /* UIimage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1F425A5885200AFB3FE /* UIimage+Ext.swift */; };
+		AA78C1FB25A58A0500AFB3FE /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1FA25A58A0500AFB3FE /* HTTPRequest.swift */; };
+		AA78C1FE25A58A7800AFB3FE /* HTTPRequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1FD25A58A7800AFB3FE /* HTTPRequestHeader.swift */; };
+		AA78C20125A58AAB00AFB3FE /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C20025A58AAB00AFB3FE /* HTTPRequestMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		AA78C1EE25A587FF00AFB3FE /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
 		AA78C1F125A5881D00AFB3FE /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		AA78C1F425A5885200AFB3FE /* UIimage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Ext.swift"; sourceTree = "<group>"; };
+		AA78C1FA25A58A0500AFB3FE /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		AA78C1FD25A58A7800AFB3FE /* HTTPRequestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestHeader.swift; sourceTree = "<group>"; };
+		AA78C20025A58AAB00AFB3FE /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,7 @@
 		AA78C15725A575E400AFB3FE /* klikfilm */ = {
 			isa = PBXGroup;
 			children = (
+				AA78C1F825A588A000AFB3FE /* app-helper */,
 				AA78C1E225A5875D00AFB3FE /* app-common */,
 				AA78C1DE25A5806000AFB3FE /* app-extensions */,
 				AA78C1CA25A57FA800AFB3FE /* app-template */,
@@ -245,6 +252,24 @@
 				AA78C1EB25A5879F00AFB3FE /* Localizable.strings */,
 			);
 			path = Localize;
+			sourceTree = "<group>";
+		};
+		AA78C1F825A588A000AFB3FE /* app-helper */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1F925A588A700AFB3FE /* HTTPRequest */,
+			);
+			path = "app-helper";
+			sourceTree = "<group>";
+		};
+		AA78C1F925A588A700AFB3FE /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1FA25A58A0500AFB3FE /* HTTPRequest.swift */,
+				AA78C1FD25A58A7800AFB3FE /* HTTPRequestHeader.swift */,
+				AA78C20025A58AAB00AFB3FE /* HTTPRequestMethod.swift */,
+			);
+			path = HTTPRequest;
 			sourceTree = "<group>";
 		};
 		B942BD8A21089299A6D99B60 /* Frameworks */ = {
@@ -391,6 +416,7 @@
 				AA78C19B25A57A3A00AFB3FE /* DiscoverInteractor.swift in Sources */,
 				AA78C1A125A57AA800AFB3FE /* CompositeAppDelegate.swift in Sources */,
 				AA78C1D625A5800A00AFB3FE /* KFLabelBody.swift in Sources */,
+				AA78C1FE25A58A7800AFB3FE /* HTTPRequestHeader.swift in Sources */,
 				AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */,
 				AA78C1DC25A5802B00AFB3FE /* KFColor.swift in Sources */,
 				AA78C1C025A57DC400AFB3FE /* DiscoverPosterCell.swift in Sources */,
@@ -398,10 +424,12 @@
 				AA78C19C25A57A3A00AFB3FE /* DiscoverView.swift in Sources */,
 				AA78C1E925A5878800AFB3FE /* LocalizableDelegate.swift in Sources */,
 				AA78C1E525A5877A00AFB3FE /* Localizable.swift in Sources */,
+				AA78C20125A58AAB00AFB3FE /* HTTPRequestMethod.swift in Sources */,
 				AA78C1EF25A587FF00AFB3FE /* Debugger.swift in Sources */,
 				AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */,
 				AA78C1D325A57FFE00AFB3FE /* KFLabelTitle.swift in Sources */,
 				AA78C19825A57A3A00AFB3FE /* DiscoverPresenter.swift in Sources */,
+				AA78C1FB25A58A0500AFB3FE /* HTTPRequest.swift in Sources */,
 				AA78C1CF25A57FF000AFB3FE /* KFFont.swift in Sources */,
 				AA78C19925A57A3A00AFB3FE /* DiscoverRouter.swift in Sources */,
 			);
