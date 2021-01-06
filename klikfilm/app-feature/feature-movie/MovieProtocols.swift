@@ -29,6 +29,9 @@ protocol MovieViewToPresenter: class {
     var view: MoviePresenterToView? {get set}
     var interactor: MoviePresenterToInteractor? {get set}
     var router: MoviePresenterToRouter? {get set}
+    
+    func numberOfRowsInSection() -> Int
+    func cellForRowAt(indexPath: IndexPath) -> MovieItem
 }
 
 protocol MovieInteractorToPresenter: class {

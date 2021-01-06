@@ -12,12 +12,19 @@ class MoviePresenter: MovieViewToPresenter {
     var interactor: MoviePresenterToInteractor?
     var router: MoviePresenterToRouter?
     
-    var movie: MovieItem?
+    var movie: MovieItem
     
-    init(movie: MovieItem?) {
+    init(movie: MovieItem) {
         self.movie = movie
     }
-  
+    
+    func numberOfRowsInSection() -> Int {
+        return 1
+    }
+    
+    func cellForRowAt(indexPath: IndexPath) -> MovieItem {
+        return movie
+    }
 }
 
 extension MoviePresenter: MovieInteractorToPresenter {
