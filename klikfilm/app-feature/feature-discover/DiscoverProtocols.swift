@@ -13,11 +13,18 @@ protocol DiscoverPresenterToView: class {
     var presenter: DiscoverViewToPresenter? { get set }
     
     func setupViews()
+    func showAlert(title: String, message: String, okCompletion: (() -> Void)?)
+    func showlAlertConfirm(title: String, message: String, okCompletion: (() -> Void)?, cancelCompletion: (() -> Void)?)
+    func showLoaderIndicator()
+    func dismissLoaderIndicator()
+    func reloadCollectionView()
 }
 
 // MARK: Interactor -
 protocol DiscoverPresenterToInteractor: class {
     var presenter: DiscoverInteractorToPresenter?  { get set }
+    
+    func getDiscover(page: Int?)
 }
 
 
@@ -34,8 +41,10 @@ protocol DiscoverViewToPresenter: class {
     
     func didLoad()
     func numberOfItemsInSection() -> Int
-    func cellForItemAt(indexPath: IndexPath)
+    func cellForItemAt(indexPath: IndexPath) -> MovieItem
 }
 
 protocol DiscoverInteractorToPresenter: class {
+    func didGetDiscover(movie: MoviesResponse)
+    func failGetDiscover(title: String, message: String)
 }

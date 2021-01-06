@@ -15,8 +15,14 @@ enum KFColor: String {
     case white = "FFFFFF" // white
     case alto = "D6D6D6" // gray light
     case buttercup = "F0BE0C" // orange
+    case flamingo = "F2433A" // red F2433A
+    case electric_violet = "A00FC2" // blue
         
     func get() -> UIColor {
         return self.rawValue.hexToUIColor()
+    }
+    
+    static func brandColor() -> UIColor {
+        return KFColor.electric_violet.get()
     }
 }

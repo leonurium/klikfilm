@@ -25,6 +25,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="052-CA-EwB"/>
                                     <constraint firstAttribute="height" constant="170" id="g0F-fK-HhI"/>
+                                    <constraint firstAttribute="width" secondItem="ntC-O1-7FC" secondAttribute="height" multiplier="11:17" id="h3B-HA-kXK"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWa-8p-w4B" customClass="KFLabelTitle" customModule="klikfilm" customModuleProvider="target">

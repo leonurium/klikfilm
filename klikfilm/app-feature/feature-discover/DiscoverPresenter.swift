@@ -12,19 +12,33 @@ class DiscoverPresenter: DiscoverViewToPresenter {
     var interactor: DiscoverPresenterToInteractor?
     var router: DiscoverPresenterToRouter?
     
+    var movies: [MovieItem] = []
+    var page: Int = 1
+    var total_page: Int = 100
+    
     func didLoad() {
         view?.setupViews()
+        interactor?.getDiscover(page: page)
     }
     
     func numberOfItemsInSection() -> Int {
-        return 10
+        return movies.count
     }
     
-    func cellForItemAt(indexPath: IndexPath) {
-        
+    func cellForItemAt(indexPath: IndexPath) -> MovieItem {
+        return movies[indexPath.row]
     }
 }
 
 extension DiscoverPresenter: DiscoverInteractorToPresenter {
+    func didGetDiscover(movie: MoviesResponse) {
+        movies = movie.results
+        page = movie.page
+        total_page = movie.total_pages
+        view?.reloadCollectionView()
+    }
     
+    func failGetDiscover(title: String, message: String) {
+        view?.showAlert(title: title, message: message, okCompletion: nil)
+    }
 }

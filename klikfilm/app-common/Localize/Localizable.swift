@@ -8,6 +8,10 @@
 import Foundation
 
 enum Localizable {
+    enum TitlePage: String, LocalizableDelegate {
+        case page_discover
+    }
+    
     enum TitleAlert: String, LocalizableDelegate {
         case information
         case success
@@ -18,7 +22,14 @@ enum Localizable {
     enum Error: String, LocalizableDelegate {
         case something_wrong
     }
+    
+    enum Button: String, LocalizableDelegate {
+        case ok
+        case cancel
+    }
 }
 
+typealias LTitlePage = Localizable.TitlePage
 typealias LTitleAlert = Localizable.TitleAlert
 typealias LError = Localizable.Error
+typealias LButton = Localizable.Button

@@ -8,6 +8,7 @@ target 'klikfilm' do
   # Pods for klikfilm
   pod 'Siren'
   pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
 

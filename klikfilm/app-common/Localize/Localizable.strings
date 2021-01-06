@@ -14,3 +14,10 @@
 
 // MARK: - Error
 "something_wrong" = "Looks like something went wrong";
+
+// MARK: - BUTTON
+"ok" = "OK";
+"cancel" = "Cancel";
+
+// MARK: - Title Page
+"page_discover" = "DISCOVER";
