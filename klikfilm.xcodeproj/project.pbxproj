@@ -23,6 +23,14 @@
 		AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A625A57AC300AFB3FE /* CompositeSceneDelegate.swift */; };
 		AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */; };
 		AA78C1AD25A57D1C00AFB3FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA78C1AC25A57D1C00AFB3FE /* GoogleService-Info.plist */; };
+		AA78C1C025A57DC400AFB3FE /* DiscoverPosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1BF25A57DC400AFB3FE /* DiscoverPosterCell.swift */; };
+		AA78C1C425A57DD300AFB3FE /* DiscoverPosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78C1C325A57DD300AFB3FE /* DiscoverPosterCell.xib */; };
+		AA78C1CF25A57FF000AFB3FE /* KFFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1CE25A57FF000AFB3FE /* KFFont.swift */; };
+		AA78C1D325A57FFE00AFB3FE /* KFLabelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1D225A57FFE00AFB3FE /* KFLabelTitle.swift */; };
+		AA78C1D625A5800A00AFB3FE /* KFLabelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1D525A5800A00AFB3FE /* KFLabelBody.swift */; };
+		AA78C1D925A5801600AFB3FE /* KFLabelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1D825A5801600AFB3FE /* KFLabelNote.swift */; };
+		AA78C1DC25A5802B00AFB3FE /* KFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1DB25A5802B00AFB3FE /* KFColor.swift */; };
+		AA78C1E025A5807200AFB3FE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C1DF25A5807200AFB3FE /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +53,14 @@
 		AA78C1A625A57AC300AFB3FE /* CompositeSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSceneDelegate.swift; sourceTree = "<group>"; };
 		AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegates.swift; sourceTree = "<group>"; };
 		AA78C1AC25A57D1C00AFB3FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA78C1BF25A57DC400AFB3FE /* DiscoverPosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPosterCell.swift; sourceTree = "<group>"; };
+		AA78C1C325A57DD300AFB3FE /* DiscoverPosterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverPosterCell.xib; sourceTree = "<group>"; };
+		AA78C1CE25A57FF000AFB3FE /* KFFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFFont.swift; sourceTree = "<group>"; };
+		AA78C1D225A57FFE00AFB3FE /* KFLabelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFLabelTitle.swift; sourceTree = "<group>"; };
+		AA78C1D525A5800A00AFB3FE /* KFLabelBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFLabelBody.swift; sourceTree = "<group>"; };
+		AA78C1D825A5801600AFB3FE /* KFLabelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFLabelNote.swift; sourceTree = "<group>"; };
+		AA78C1DB25A5802B00AFB3FE /* KFColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFColor.swift; sourceTree = "<group>"; };
+		AA78C1DF25A5807200AFB3FE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +97,8 @@
 		AA78C15725A575E400AFB3FE /* klikfilm */ = {
 			isa = PBXGroup;
 			children = (
+				AA78C1DE25A5806000AFB3FE /* app-extensions */,
+				AA78C1CA25A57FA800AFB3FE /* app-template */,
 				AA78C19025A579FC00AFB3FE /* app-feature */,
 				AA78C18D25A5788100AFB3FE /* app-metadata */,
 				AA78C18C25A5786A00AFB3FE /* app-cycle */,
@@ -120,6 +138,7 @@
 		AA78C19125A57A1900AFB3FE /* feature-discover */ = {
 			isa = PBXGroup;
 			children = (
+				AA78C1BE25A57DB500AFB3FE /* Cell */,
 				AA78C19225A57A3A00AFB3FE /* DiscoverPresenter.swift */,
 				AA78C19325A57A3A00AFB3FE /* DiscoverRouter.swift */,
 				AA78C19425A57A3A00AFB3FE /* DiscoverProtocols.swift */,
@@ -139,6 +158,59 @@
 				AA78C1A925A57ACE00AFB3FE /* SceneDelegates.swift */,
 			);
 			path = Composite;
+			sourceTree = "<group>";
+		};
+		AA78C1BE25A57DB500AFB3FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1BF25A57DC400AFB3FE /* DiscoverPosterCell.swift */,
+				AA78C1C325A57DD300AFB3FE /* DiscoverPosterCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AA78C1CA25A57FA800AFB3FE /* app-template */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1CD25A57FDB00AFB3FE /* KFFont */,
+				AA78C1CC25A57FCF00AFB3FE /* KFLabel */,
+				AA78C1CB25A57FC400AFB3FE /* KFColor */,
+			);
+			path = "app-template";
+			sourceTree = "<group>";
+		};
+		AA78C1CB25A57FC400AFB3FE /* KFColor */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1DB25A5802B00AFB3FE /* KFColor.swift */,
+			);
+			path = KFColor;
+			sourceTree = "<group>";
+		};
+		AA78C1CC25A57FCF00AFB3FE /* KFLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1D225A57FFE00AFB3FE /* KFLabelTitle.swift */,
+				AA78C1D525A5800A00AFB3FE /* KFLabelBody.swift */,
+				AA78C1D825A5801600AFB3FE /* KFLabelNote.swift */,
+			);
+			path = KFLabel;
+			sourceTree = "<group>";
+		};
+		AA78C1CD25A57FDB00AFB3FE /* KFFont */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1CE25A57FF000AFB3FE /* KFFont.swift */,
+			);
+			path = KFFont;
+			sourceTree = "<group>";
+		};
+		AA78C1DE25A5806000AFB3FE /* app-extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA78C1DF25A5807200AFB3FE /* String+Ext.swift */,
+			);
+			path = "app-extensions";
 			sourceTree = "<group>";
 		};
 		B942BD8A21089299A6D99B60 /* Frameworks */ = {
@@ -219,6 +291,7 @@
 			files = (
 				AA78C16525A575E500AFB3FE /* LaunchScreen.storyboard in Resources */,
 				AA78C1AD25A57D1C00AFB3FE /* GoogleService-Info.plist in Resources */,
+				AA78C1C425A57DD300AFB3FE /* DiscoverPosterCell.xib in Resources */,
 				AA78C19D25A57A3A00AFB3FE /* DiscoverView.xib in Resources */,
 				AA78C16225A575E500AFB3FE /* Assets.xcassets in Resources */,
 			);
@@ -273,16 +346,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA78C1E025A5807200AFB3FE /* String+Ext.swift in Sources */,
 				AA78C15925A575E400AFB3FE /* AppDelegate.swift in Sources */,
 				AA78C19A25A57A3A00AFB3FE /* DiscoverProtocols.swift in Sources */,
 				AA78C1A425A57AB500AFB3FE /* AppDelegates.swift in Sources */,
+				AA78C1D925A5801600AFB3FE /* KFLabelNote.swift in Sources */,
 				AA78C15B25A575E400AFB3FE /* SceneDelegate.swift in Sources */,
 				AA78C19B25A57A3A00AFB3FE /* DiscoverInteractor.swift in Sources */,
 				AA78C1A125A57AA800AFB3FE /* CompositeAppDelegate.swift in Sources */,
+				AA78C1D625A5800A00AFB3FE /* KFLabelBody.swift in Sources */,
 				AA78C1AA25A57ACE00AFB3FE /* SceneDelegates.swift in Sources */,
+				AA78C1DC25A5802B00AFB3FE /* KFColor.swift in Sources */,
+				AA78C1C025A57DC400AFB3FE /* DiscoverPosterCell.swift in Sources */,
 				AA78C19C25A57A3A00AFB3FE /* DiscoverView.swift in Sources */,
 				AA78C1A725A57AC300AFB3FE /* CompositeSceneDelegate.swift in Sources */,
+				AA78C1D325A57FFE00AFB3FE /* KFLabelTitle.swift in Sources */,
 				AA78C19825A57A3A00AFB3FE /* DiscoverPresenter.swift in Sources */,
+				AA78C1CF25A57FF000AFB3FE /* KFFont.swift in Sources */,
 				AA78C19925A57A3A00AFB3FE /* DiscoverRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
