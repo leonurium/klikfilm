@@ -30,6 +30,10 @@ class DiscoverPresenter: DiscoverViewToPresenter {
         return movies[indexPath.row]
     }
     
+    func didSelectItemAt(indexPath: IndexPath) {
+        self.router?.navigateToMovie(from: self.view, movie: movies[indexPath.item])
+    }
+    
     func requestGetMovies() {
         if page <= total_page && !isMoreList {
             view?.showLoaderIndicator()

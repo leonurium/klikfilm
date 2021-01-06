@@ -23,4 +23,10 @@ class DiscoverRouter: DiscoverPresenterToRouter {
         
         return view
     }
+    
+    func navigateToMovie(from: DiscoverPresenterToView?, movie: MovieItem) {
+        if let vc = from as? UIViewController {
+            vc.navigationController?.pushViewController(MovieRouter.createMovieModule(movie: movie), animated: true)
+        }
+    }
 }

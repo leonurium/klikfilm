@@ -1,5 +1,5 @@
 //
-//  Model.swift
+//  Entity.swift
 //  klikfilm
 //
 //  Created by Rangga Leo on 06/01/21.

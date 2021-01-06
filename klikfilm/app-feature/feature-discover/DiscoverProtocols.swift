@@ -32,6 +32,7 @@ protocol DiscoverPresenterToInteractor: class {
 // MARK: Router -
 protocol DiscoverPresenterToRouter: class {
     static func createDiscoverModule() -> UIViewController
+    func navigateToMovie(from: DiscoverPresenterToView?, movie: MovieItem)
 }
 
 // MARK: Presenter -
@@ -43,6 +44,7 @@ protocol DiscoverViewToPresenter: class {
     func didLoad()
     func numberOfItemsInSection() -> Int
     func cellForItemAt(indexPath: IndexPath) -> MovieItem
+    func didSelectItemAt(indexPath: IndexPath)
     func requestGetMovies()
 }
 
