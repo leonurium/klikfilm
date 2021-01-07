@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,28 +17,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="230" height="172"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muo-GT-Vwx" customClass="YTPlayerView">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVt-8w-JoP">
                         <rect key="frame" x="0.0" y="0.0" width="230" height="172"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muo-GT-Vwx" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="143.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-Ts-mPZ" customClass="KFLabelTitle" customModule="klikfilm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="151.5" width="230" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="muo-GT-Vwx" secondAttribute="bottom" id="KgM-Sg-uPr"/>
-                    <constraint firstAttribute="trailing" secondItem="muo-GT-Vwx" secondAttribute="trailing" id="KwW-Rd-bHT"/>
-                    <constraint firstItem="muo-GT-Vwx" firstAttribute="top" secondItem="ITU-lf-Xgq" secondAttribute="top" id="hl2-DB-IqW"/>
-                    <constraint firstItem="muo-GT-Vwx" firstAttribute="leading" secondItem="ITU-lf-Xgq" secondAttribute="leading" id="kuF-cF-J8H"/>
+                    <constraint firstItem="WVt-8w-JoP" firstAttribute="top" secondItem="ITU-lf-Xgq" secondAttribute="top" id="SyN-0a-poT"/>
+                    <constraint firstItem="WVt-8w-JoP" firstAttribute="leading" secondItem="ITU-lf-Xgq" secondAttribute="leading" id="VZq-iv-cKO"/>
+                    <constraint firstAttribute="bottom" secondItem="WVt-8w-JoP" secondAttribute="bottom" id="gD2-7v-znt"/>
+                    <constraint firstAttribute="trailing" secondItem="WVt-8w-JoP" secondAttribute="trailing" id="hQA-YT-QVX"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="230" height="172"/>
             <connections>
+                <outlet property="lbl_title" destination="o3L-Ts-mPZ" id="iN4-8y-oL4"/>
                 <outlet property="playerView" destination="muo-GT-Vwx" id="PoH-wY-6Kk"/>
             </connections>
-            <point key="canvasLocation" x="268.1159420289855" y="78.348214285714278"/>
+            <point key="canvasLocation" x="266.66666666666669" y="78.348214285714278"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -26,7 +26,7 @@ class MoviePresenter: MovieViewToPresenter {
     }
     
     func numberOfRowsInSection() -> Int {
-        return 2
+        return 3
     }
     
     func cellForMovieInfo(indexPath: IndexPath) -> MovieItem {
