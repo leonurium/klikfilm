@@ -34,6 +34,7 @@ class DiscoverView: UIViewController, DiscoverPresenterToView {
     }
     
     func setupViews() {
+        navigationDefault()
         navigationController?.navigationBar.isHidden = false
         title = LTitlePage.page_discover.localized
         

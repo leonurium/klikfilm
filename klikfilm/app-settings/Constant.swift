@@ -12,6 +12,7 @@ struct URLConst {
     static let version_api  = "3/"
     static let api_url      = server + version_api
     static let api_poster   = "https://image.tmdb.org/t/p/"
+    static let api_avatar   = "https://secure.gravatar.com/avatar/"
     
     static let api_genre    = api_url + "genre/"
     static let api_discover = api_url + "discover/"

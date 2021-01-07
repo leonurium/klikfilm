@@ -51,21 +51,19 @@ class ReviewCell: UICollectionViewCell {
     }
     
     private func updateUI() {
-        if let url_avatar = URL(string: review?.author_details.avatar_path ?? "") {
-            image_avatar.kf.setImage(with: url_avatar, placeholder: nil, options: nil, progressBlock: nil) { (result) in
-                switch result {
-                case .failure(let err):
-                    debugLog(err)
-                    self.image_avatar.setImageForName(string: self.review?.author ?? "Anonymous", circular: true)
-                case .success(let res):
-                    self.image_avatar.image = res.image
-                }
-            }
-        } else {
-            image_avatar.setImageForName(string: review?.author ?? "Anonymous", circular: true)
-        }
-        
         lbl_author.text = review?.author
         lbl_content.text = review?.content
+        
+        if
+            let array_avatar = review?.author_details.avatar_path?.split(separator: "/"),
+            let last_array_item = array_avatar.last {
+            let file_name_avatar = String(describing: last_array_item)
+            if let url_avatar = URL(string: URLConst.api_avatar + file_name_avatar) {
+                image_avatar.kf.setImage(with: url_avatar)
+                return
+            }
+        }
+        
+        image_avatar.setImageForName(string: review?.author ?? "Anonymous", circular: true)
     }
 }

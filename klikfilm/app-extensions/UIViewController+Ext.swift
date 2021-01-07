@@ -8,6 +8,12 @@
 import UIKit
 
 extension UIViewController {
+    
+    public func navigationDefault() {
+        self.navigationItem.backBarButtonItem               = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.tintColor  = KFColor.brandColor()
+    }
+    
     public func showAlert(title: String?, message: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
         let alertController             = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.view.tintColor  = KFColor.brandColor()

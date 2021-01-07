@@ -10,6 +10,7 @@ import Foundation
 enum Localizable {
     enum TitlePage: String, LocalizableDelegate {
         case page_discover
+        case page_movie_detail
     }
     
     enum TitleAlert: String, LocalizableDelegate {

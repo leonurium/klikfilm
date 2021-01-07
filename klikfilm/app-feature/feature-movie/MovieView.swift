@@ -30,6 +30,9 @@ class MovieView: UIViewController, MoviePresenterToView {
     }
     
     func setupViews() {
+        navigationController?.navigationBar.isHidden = false
+        title = LTitlePage.page_movie_detail.localized
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none

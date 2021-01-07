@@ -47,8 +47,10 @@ class MoviePresenter: MovieViewToPresenter {
 extension MoviePresenter: MovieInteractorToPresenter {
     func didGetVideos(videos: [VideoItem]) {
         self.videos = videos
-        view?.reloadTableView()
         view?.dismissLoaderIndicator()
+        if reviews.count > 0 {
+            view?.reloadTableView()
+        }
     }
     
     func failGetVideos(title: String, message: String) {
@@ -58,8 +60,10 @@ extension MoviePresenter: MovieInteractorToPresenter {
     
     func didGetReviews(reviews: [ReviewItem]) {
         self.reviews = reviews
-        view?.reloadTableView()
         view?.dismissLoaderIndicator()
+        if videos.count > 0 {
+            view?.reloadTableView()
+        }
     }
     
     func failGetReviews(title: String, message: String) {
