@@ -87,3 +87,28 @@ struct VideoItem: Codable {
     let size        : Int
     let type        : String
 }
+
+struct ReviewResponse: Codable {
+    let id : Int
+    let page : Int
+    let total_pages : Int
+    let total_results : Int
+    let results : [ReviewItem]
+}
+
+struct ReviewItem: Codable {
+    let id: String
+    let author: String
+    let author_details: Author
+    let content: String
+    let created_at: String
+    let updated_at: String
+    let url: String
+}
+
+struct Author: Codable {
+    let name : String
+    let username: String
+    let avatar_path: String
+    let rating: Int
+}
