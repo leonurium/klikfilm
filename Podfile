@@ -12,5 +12,11 @@ target 'klikfilm' do
   pod "youtube-ios-player-helper"
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
+  
+  target 'klikfilmTests' do
+    inherit! :complete
+    pod 'Quick'
+    pod 'Nimble'
+  end
 
 end

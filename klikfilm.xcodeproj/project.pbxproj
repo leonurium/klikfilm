@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A3E1835809B837DA81CBBC /* Pods_klikfilm_klikfilmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCF0E52E92754034AE5568C /* Pods_klikfilm_klikfilmTests.framework */; };
 		A7942B3B270519B9E3FE3721 /* Pods_klikfilm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD9137FE8BA8CF41E1A51ED /* Pods_klikfilm.framework */; };
 		AA78C15925A575E400AFB3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C15825A575E400AFB3FE /* AppDelegate.swift */; };
 		AA78C15B25A575E400AFB3FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78C15A25A575E400AFB3FE /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		AA78C23A25A6070500AFB3FE /* MovieInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78C23925A6070500AFB3FE /* MovieInfoCell.xib */; };
 		AAA119ED25A70E8F00295E04 /* UIimageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA119EC25A70E8F00295E04 /* UIimageView+Ext.swift */; };
 		AAA119F025A7102400295E04 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA119EF25A7102400295E04 /* UIColor+Ext.swift */; };
+		AAA11A4A25A7444700295E04 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA11A4925A7444700295E04 /* DiscoverTests.swift */; };
 		AABE85F025A61E5F00E6F580 /* KFImageBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE85EF25A61E5F00E6F580 /* KFImageBlurView.swift */; };
 		AABE85F325A6B10800E6F580 /* MovieTrailerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE85F225A6B10800E6F580 /* MovieTrailerCell.swift */; };
 		AABE85F625A6B11900E6F580 /* MovieTrailerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABE85F525A6B11900E6F580 /* MovieTrailerCell.xib */; };
@@ -65,6 +67,16 @@
 		AABE861C25A6CE9E00E6F580 /* MovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE861B25A6CE9E00E6F580 /* MovieReviewCell.swift */; };
 		AABE861F25A6CEB100E6F580 /* MovieReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABE861E25A6CEB100E6F580 /* MovieReviewCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAA11A2D25A743C200295E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA78C14D25A575E400AFB3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA78C15425A575E400AFB3FE;
+			remoteInfo = klikfilm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05EF8FF19DD3FCC2B1189758 /* Pods-klikfilm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.release.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +129,9 @@
 		AA78C23925A6070500AFB3FE /* MovieInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoCell.xib; sourceTree = "<group>"; };
 		AAA119EC25A70E8F00295E04 /* UIimageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimageView+Ext.swift"; sourceTree = "<group>"; };
 		AAA119EF25A7102400295E04 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		AAA11A2825A743C200295E04 /* klikfilmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = klikfilmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA11A2C25A743C200295E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA11A4925A7444700295E04 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
 		AABE85EF25A61E5F00E6F580 /* KFImageBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImageBlurView.swift; sourceTree = "<group>"; };
 		AABE85F225A6B10800E6F580 /* MovieTrailerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTrailerCell.swift; sourceTree = "<group>"; };
 		AABE85F525A6B11900E6F580 /* MovieTrailerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTrailerCell.xib; sourceTree = "<group>"; };
@@ -127,7 +142,10 @@
 		AABE861825A6CC2B00E6F580 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		AABE861B25A6CE9E00E6F580 /* MovieReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewCell.swift; sourceTree = "<group>"; };
 		AABE861E25A6CEB100E6F580 /* MovieReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieReviewCell.xib; sourceTree = "<group>"; };
+		ADA84A02A6CC4F1442F40CE7 /* Pods-klikfilm-klikfilmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm-klikfilmTests.release.xcconfig"; path = "Target Support Files/Pods-klikfilm-klikfilmTests/Pods-klikfilm-klikfilmTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm/Pods-klikfilm.debug.xcconfig"; sourceTree = "<group>"; };
+		C3B23ACFAFDCBF290C31349C /* Pods-klikfilm-klikfilmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikfilm-klikfilmTests.debug.xcconfig"; path = "Target Support Files/Pods-klikfilm-klikfilmTests/Pods-klikfilm-klikfilmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFCF0E52E92754034AE5568C /* Pods_klikfilm_klikfilmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_klikfilm_klikfilmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +157,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAA11A2525A743C200295E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A3E1835809B837DA81CBBC /* Pods_klikfilm_klikfilmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -146,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				AA78C15725A575E400AFB3FE /* klikfilm */,
+				AAA11A2925A743C200295E04 /* klikfilmTests */,
 				AA78C15625A575E400AFB3FE /* Products */,
 				EB6D9DBF1C394D726290CDCF /* Pods */,
 				B942BD8A21089299A6D99B60 /* Frameworks */,
@@ -156,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				AA78C15525A575E400AFB3FE /* klikfilm.app */,
+				AAA11A2825A743C200295E04 /* klikfilmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,6 +410,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AAA11A2925A743C200295E04 /* klikfilmTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAA11A2C25A743C200295E04 /* Info.plist */,
+				AAA11A4925A7444700295E04 /* DiscoverTests.swift */,
+			);
+			path = klikfilmTests;
+			sourceTree = "<group>";
+		};
 		AABE85EE25A61E4600E6F580 /* KFImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				0FD9137FE8BA8CF41E1A51ED /* Pods_klikfilm.framework */,
+				FFCF0E52E92754034AE5568C /* Pods_klikfilm_klikfilmTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -421,6 +459,8 @@
 			children = (
 				BBD17C33A2941779CC620FED /* Pods-klikfilm.debug.xcconfig */,
 				05EF8FF19DD3FCC2B1189758 /* Pods-klikfilm.release.xcconfig */,
+				C3B23ACFAFDCBF290C31349C /* Pods-klikfilm-klikfilmTests.debug.xcconfig */,
+				ADA84A02A6CC4F1442F40CE7 /* Pods-klikfilm-klikfilmTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -447,6 +487,26 @@
 			productReference = AA78C15525A575E400AFB3FE /* klikfilm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAA11A2725A743C200295E04 /* klikfilmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA11A2F25A743C200295E04 /* Build configuration list for PBXNativeTarget "klikfilmTests" */;
+			buildPhases = (
+				AEB5788BD14A57DB3A502278 /* [CP] Check Pods Manifest.lock */,
+				AAA11A2425A743C200295E04 /* Sources */,
+				AAA11A2525A743C200295E04 /* Frameworks */,
+				AAA11A2625A743C200295E04 /* Resources */,
+				26E4ECDB9E0363927EC30825 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAA11A2E25A743C200295E04 /* PBXTargetDependency */,
+			);
+			name = klikfilmTests;
+			productName = klikfilmTests;
+			productReference = AAA11A2825A743C200295E04 /* klikfilmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -458,6 +518,10 @@
 				TargetAttributes = {
 					AA78C15425A575E400AFB3FE = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					AAA11A2725A743C200295E04 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AA78C15425A575E400AFB3FE;
 					};
 				};
 			};
@@ -475,6 +539,7 @@
 			projectRoot = "";
 			targets = (
 				AA78C15425A575E400AFB3FE /* klikfilm */,
+				AAA11A2725A743C200295E04 /* klikfilmTests */,
 			);
 		};
 /* End PBXProject section */
@@ -499,9 +564,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAA11A2625A743C200295E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26E4ECDB9E0363927EC30825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-klikfilm-klikfilmTests/Pods-klikfilm-klikfilmTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-klikfilm-klikfilmTests/Pods-klikfilm-klikfilmTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-klikfilm-klikfilmTests/Pods-klikfilm-klikfilmTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		315E51B7616CA3C6AAD970F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +607,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-klikfilm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB5788BD14A57DB3A502278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-klikfilm-klikfilmTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -595,7 +706,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAA11A2425A743C200295E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA11A4A25A7444700295E04 /* DiscoverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAA11A2E25A743C200295E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA78C15425A575E400AFB3FE /* klikfilm */;
+			targetProxy = AAA11A2D25A743C200295E04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AA78C16325A575E500AFB3FE /* LaunchScreen.storyboard */ = {
@@ -769,6 +896,48 @@
 			};
 			name = Release;
 		};
+		AAA11A3025A743C200295E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B23ACFAFDCBF290C31349C /* Pods-klikfilm-klikfilmTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC83XAQ3UM;
+				INFOPLIST_FILE = klikfilmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggaleoo.klikfilmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/klikfilm.app/klikfilm";
+			};
+			name = Debug;
+		};
+		AAA11A3125A743C200295E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA84A02A6CC4F1442F40CE7 /* Pods-klikfilm-klikfilmTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC83XAQ3UM;
+				INFOPLIST_FILE = klikfilmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggaleoo.klikfilmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/klikfilm.app/klikfilm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -786,6 +955,15 @@
 			buildConfigurations = (
 				AA78C16A25A575E500AFB3FE /* Debug */,
 				AA78C16B25A575E500AFB3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA11A2F25A743C200295E04 /* Build configuration list for PBXNativeTarget "klikfilmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA11A3025A743C200295E04 /* Debug */,
+				AAA11A3125A743C200295E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
