@@ -40,7 +40,7 @@ class MovieWorker {
     
     func getVideos(movie_id: Int, completion: @escaping (Result<VideoResponse, Error>) -> Void) {
         var queryItems: [URLQueryItem] = []
-        queryItems.append(URLQueryItem(name: "api_key", value: GlobalConst.api_key_tmdb))
+        queryItems.append(URLQueryItem(name: "api_key", value: APIConstant.api_key_tmdb.rawValue))
         
         var urlComponent = URLComponents(string: URLConst.api_movie + "\(movie_id)/videos")
         urlComponent?.queryItems = queryItems

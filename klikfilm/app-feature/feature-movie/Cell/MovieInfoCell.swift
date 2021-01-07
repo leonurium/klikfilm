@@ -51,6 +51,7 @@ class MovieInfoCell: UITableViewCell {
         lbl_overview.numberOfLines = 0
         
         lbl_title.textAlignment = .center
+        lbl_overview.textAlignment = .justified
     }
     
     private func updateUI() {

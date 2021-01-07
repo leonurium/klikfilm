@@ -9,6 +9,7 @@ target 'klikfilm' do
   pod 'Siren'
   pod 'IQKeyboardManagerSwift'
   pod 'Kingfisher'
+  pod "youtube-ios-player-helper"
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
 

@@ -13,20 +13,40 @@ class MoviePresenter: MovieViewToPresenter {
     var router: MoviePresenterToRouter?
     
     var movie: MovieItem
+    var videos: [VideoItem] = []
     
     init(movie: MovieItem) {
         self.movie = movie
     }
     
-    func numberOfRowsInSection() -> Int {
-        return 1
+    func didLoad() {
+        view?.setupViews()
+        view?.showLoaderIndicator()
+        interactor?.getVideos(movieID: movie.id)
     }
     
-    func cellForRowAt(indexPath: IndexPath) -> MovieItem {
-        return movie
+    func numberOfRowsInSection() -> Int {
+        return 2
+    }
+    
+    func cellForMovieInfo(indexPath: IndexPath) -> MovieItem {
+        movie
+    }
+    
+    func cellForMovieTrailer() -> [VideoItem] {
+        videos
     }
 }
 
 extension MoviePresenter: MovieInteractorToPresenter {
+    func didGetVideos(videos: [VideoItem]) {
+        self.videos = videos
+        view?.reloadTableView()
+        view?.dismissLoaderIndicator()
+    }
     
+    func failGetVideos(title: String, message: String) {
+        view?.dismissLoaderIndicator()
+        view?.showAlert(title: title, message: message, okCompletion: nil)
+    }
 }

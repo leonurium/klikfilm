@@ -347,8 +347,8 @@ extension HTTPRequest: URLSessionTaskDelegate {
             }
         }
         
-        if let index = tasks.index(where: {$0.task == task}) {
-            let taskSession = tasks.remove(at: index)
+        if let index = tasks.firstIndex(where: {$0.task == task}) {
+            tasks.remove(at: index)
             if let err = error {
                 delegate?.didGetError(error: err, http: self)
             }
@@ -359,7 +359,7 @@ extension HTTPRequest: URLSessionTaskDelegate {
 extension HTTPRequest: URLSessionDataDelegate {
     
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-        guard let task = tasks.first(where: {$0.task == dataTask}) else {
+        guard tasks.firstIndex(where: {$0.task == dataTask}) != nil else {
             completionHandler(.cancel)
             debugLog("----canceled")
             return

@@ -76,6 +76,7 @@ PODS:
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
   - Siren (5.6.2)
+  - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher
   - Siren
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
@@ -100,6 +102,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Siren
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   Firebase: 78e8dd2e39d653de6270432ad84fe8b59f7bf4e8
@@ -116,7 +119,8 @@ SPEC CHECKSUMS:
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   Siren: 4f98be44f7d66e80513dc3e7061898cd63935bd5
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 48da914162d74d79bbb1be0d60e04b80b2d6c7b1
+PODFILE CHECKSUM: 5695056b70de60275f989869b705009ac52e886b
 
 COCOAPODS: 1.10.0
