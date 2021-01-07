@@ -60,8 +60,8 @@ extension MovieReviewCell: UICollectionViewDelegate, UICollectionViewDataSource 
 extension MovieReviewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screen = UIScreen.main.bounds
-        let height: CGFloat = screen.height
-        let width: CGFloat = screen.width
+        let height: CGFloat = 200
+        let width: CGFloat = screen.width / 2
         return CGSize(width: width, height: height)
     }
 }

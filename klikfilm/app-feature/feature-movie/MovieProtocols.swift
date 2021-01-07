@@ -25,6 +25,7 @@ protocol MoviePresenterToInteractor: class {
     var presenter: MovieInteractorToPresenter?  { get set }
     
     func getVideos(movieID: Int)
+    func getReview(movieID: Int)
 }
 
 
@@ -43,9 +44,12 @@ protocol MovieViewToPresenter: class {
     func numberOfRowsInSection() -> Int
     func cellForMovieInfo(indexPath: IndexPath) -> MovieItem
     func cellForMovieTrailer() -> [VideoItem]
+    func cellForMovieReview() -> [ReviewItem]
 }
 
 protocol MovieInteractorToPresenter: class {
     func didGetVideos(videos: [VideoItem])
     func failGetVideos(title: String, message: String)
+    func didGetReviews(reviews: [ReviewItem])
+    func failGetReviews(title: String, message: String)
 }

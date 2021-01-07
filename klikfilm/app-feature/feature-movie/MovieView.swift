@@ -36,6 +36,7 @@ class MovieView: UIViewController, MoviePresenterToView {
         tableView.backgroundColor = KFColor.mine_shaft.get()
         tableView.register(MovieInfoCell.source.nib, forCellReuseIdentifier: MovieInfoCell.source.identifier)
         tableView.register(MovieTrailerCell.source.nib, forCellReuseIdentifier: MovieTrailerCell.source.identifier)
+        tableView.register(MovieReviewCell.source.nib, forCellReuseIdentifier: MovieReviewCell.source.identifier)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: titleIdentifierCell)
     }
     
@@ -73,7 +74,7 @@ extension MovieView: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 1,
            let cell = tableView.dequeueReusableCell(withIdentifier: titleIdentifierCell) {
             cell.backgroundColor = KFColor.mine_shaft.get()
-            cell.textLabel?.text = "Trailer"
+            cell.textLabel?.text = "TRAILERS"
             cell.textLabel?.textColor = KFColor.white.get()
             cell.textLabel?.font = KFFont.heavy.size(16)
             cell.selectionStyle = .none
@@ -90,10 +91,16 @@ extension MovieView: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 3,
            let cell = tableView.dequeueReusableCell(withIdentifier: titleIdentifierCell) {
             cell.backgroundColor = KFColor.mine_shaft.get()
-            cell.textLabel?.text = "Reviews"
+            cell.textLabel?.text = "REVIEWS"
             cell.textLabel?.textColor = KFColor.white.get()
             cell.textLabel?.font = KFFont.heavy.size(16)
             cell.selectionStyle = .none
+            return cell
+        
+        } else
+        if indexPath.row == 4,
+           let cell = tableView.dequeueReusableCell(withIdentifier: MovieReviewCell.source.identifier) as? MovieReviewCell {
+            cell.reviews = presenter?.cellForMovieReview() ?? []
             return cell
         }
         

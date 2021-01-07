@@ -14,6 +14,7 @@ class MoviePresenter: MovieViewToPresenter {
     
     var movie: MovieItem
     var videos: [VideoItem] = []
+    var reviews: [ReviewItem] = []
     
     init(movie: MovieItem) {
         self.movie = movie
@@ -23,10 +24,11 @@ class MoviePresenter: MovieViewToPresenter {
         view?.setupViews()
         view?.showLoaderIndicator()
         interactor?.getVideos(movieID: movie.id)
+        interactor?.getReview(movieID: movie.id)
     }
     
     func numberOfRowsInSection() -> Int {
-        return 3
+        return 5
     }
     
     func cellForMovieInfo(indexPath: IndexPath) -> MovieItem {
@@ -35,6 +37,10 @@ class MoviePresenter: MovieViewToPresenter {
     
     func cellForMovieTrailer() -> [VideoItem] {
         videos
+    }
+    
+    func cellForMovieReview() -> [ReviewItem] {
+        reviews
     }
 }
 
@@ -46,6 +52,17 @@ extension MoviePresenter: MovieInteractorToPresenter {
     }
     
     func failGetVideos(title: String, message: String) {
+        view?.dismissLoaderIndicator()
+        view?.showAlert(title: title, message: message, okCompletion: nil)
+    }
+    
+    func didGetReviews(reviews: [ReviewItem]) {
+        self.reviews = reviews
+        view?.reloadTableView()
+        view?.dismissLoaderIndicator()
+    }
+    
+    func failGetReviews(title: String, message: String) {
         view?.dismissLoaderIndicator()
         view?.showAlert(title: title, message: message, okCompletion: nil)
     }

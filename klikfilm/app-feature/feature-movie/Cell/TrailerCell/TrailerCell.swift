@@ -30,7 +30,7 @@ class TrailerCell: UICollectionViewCell {
     }
     
     private func setupViews() {
-        lbl_title.setFontSize(18)
+        lbl_title.setFontSize(14)
         lbl_title.textColor = KFColor.white.get()
         lbl_title.numberOfLines = 0
     }

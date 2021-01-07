@@ -11,42 +11,42 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VHd-lJ-FuN" customClass="TrailerCell" customModule="klikfilm" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="230" height="172"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="317"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ITU-lf-Xgq">
-                <rect key="frame" x="0.0" y="0.0" width="230" height="172"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="317"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVt-8w-JoP">
-                        <rect key="frame" x="0.0" y="0.0" width="230" height="172"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muo-GT-Vwx" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="0.0" width="230" height="143.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-Ts-mPZ" customClass="KFLabelTitle" customModule="klikfilm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="151.5" width="230" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-Ts-mPZ" customClass="KFLabelTitle" customModule="klikfilm" customModuleProvider="target">
+                        <rect key="frame" x="16" y="252" width="448" height="57"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muo-GT-Vwx" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="250"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </stackView>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="fvN-ys-K0F"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="WVt-8w-JoP" firstAttribute="top" secondItem="ITU-lf-Xgq" secondAttribute="top" id="SyN-0a-poT"/>
-                    <constraint firstItem="WVt-8w-JoP" firstAttribute="leading" secondItem="ITU-lf-Xgq" secondAttribute="leading" id="VZq-iv-cKO"/>
-                    <constraint firstAttribute="bottom" secondItem="WVt-8w-JoP" secondAttribute="bottom" id="gD2-7v-znt"/>
-                    <constraint firstAttribute="trailing" secondItem="WVt-8w-JoP" secondAttribute="trailing" id="hQA-YT-QVX"/>
+                    <constraint firstItem="muo-GT-Vwx" firstAttribute="leading" secondItem="ITU-lf-Xgq" secondAttribute="leading" id="5Cv-kD-P4i"/>
+                    <constraint firstAttribute="bottom" secondItem="o3L-Ts-mPZ" secondAttribute="bottom" constant="8" id="DDH-38-q3g"/>
+                    <constraint firstItem="o3L-Ts-mPZ" firstAttribute="top" secondItem="muo-GT-Vwx" secondAttribute="bottom" constant="2" id="OAy-e1-nGG"/>
+                    <constraint firstAttribute="trailing" secondItem="o3L-Ts-mPZ" secondAttribute="trailing" constant="16" id="TeT-Qa-Tyf"/>
+                    <constraint firstAttribute="trailing" secondItem="muo-GT-Vwx" secondAttribute="trailing" id="ZJV-Uf-mnl"/>
+                    <constraint firstItem="o3L-Ts-mPZ" firstAttribute="leading" secondItem="ITU-lf-Xgq" secondAttribute="leading" constant="16" id="sd3-1g-7zK"/>
+                    <constraint firstItem="muo-GT-Vwx" firstAttribute="top" secondItem="ITU-lf-Xgq" secondAttribute="top" id="wWw-gL-xK8"/>
                 </constraints>
             </collectionViewCellContentView>
-            <size key="customSize" width="230" height="172"/>
+            <size key="customSize" width="480" height="317"/>
             <connections>
                 <outlet property="lbl_title" destination="o3L-Ts-mPZ" id="iN4-8y-oL4"/>
                 <outlet property="playerView" destination="muo-GT-Vwx" id="PoH-wY-6Kk"/>
             </connections>
-            <point key="canvasLocation" x="266.66666666666669" y="78.348214285714278"/>
+            <point key="canvasLocation" x="447.82608695652175" y="126.89732142857142"/>
         </collectionViewCell>
     </objects>
 </document>

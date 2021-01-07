@@ -109,6 +109,6 @@ struct ReviewItem: Codable {
 struct Author: Codable {
     let name : String
     let username: String
-    let avatar_path: String
-    let rating: Int
+    let avatar_path: String?
+    let rating: Int?
 }

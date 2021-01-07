@@ -1,10 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mV7-Wo-6c4" customClass="ReviewCell" customModule="klikfilm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b8c-Fb-XHH">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUq-xI-QEH">
+                        <rect key="frame" x="8" y="0.0" width="279" height="147"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZy-gd-p9k">
+                                <rect key="frame" x="16" y="16" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="GmS-ki-nNV"/>
+                                    <constraint firstAttribute="width" constant="38" id="xoH-AJ-ej3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDM-V8-5n2" customClass="KFLabelTitle" customModule="klikfilm" customModuleProvider="target">
+                                <rect key="frame" x="62" y="16" width="201" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvu-TV-6hB" customClass="KFLabelBody" customModule="klikfilm" customModuleProvider="target">
+                                <rect key="frame" x="16" y="62" width="247" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hvu-TV-6hB" firstAttribute="leading" secondItem="vUq-xI-QEH" secondAttribute="leading" constant="16" id="HS0-V2-3W1"/>
+                            <constraint firstItem="wDM-V8-5n2" firstAttribute="top" secondItem="AZy-gd-p9k" secondAttribute="top" id="Mz8-ov-78o"/>
+                            <constraint firstAttribute="trailing" secondItem="Hvu-TV-6hB" secondAttribute="trailing" constant="16" id="PwM-sB-kaz"/>
+                            <constraint firstItem="Hvu-TV-6hB" firstAttribute="top" secondItem="AZy-gd-p9k" secondAttribute="bottom" constant="8" id="Rw5-fk-JhY"/>
+                            <constraint firstItem="AZy-gd-p9k" firstAttribute="top" secondItem="vUq-xI-QEH" secondAttribute="top" constant="16" id="Ylj-iQ-qBe"/>
+                            <constraint firstItem="wDM-V8-5n2" firstAttribute="bottom" secondItem="AZy-gd-p9k" secondAttribute="bottom" id="hej-qM-ZVp"/>
+                            <constraint firstAttribute="trailing" secondItem="wDM-V8-5n2" secondAttribute="trailing" constant="16" id="ptv-Xx-Daq"/>
+                            <constraint firstItem="wDM-V8-5n2" firstAttribute="leading" secondItem="AZy-gd-p9k" secondAttribute="trailing" constant="8" id="pzC-wx-H7e"/>
+                            <constraint firstAttribute="bottom" secondItem="Hvu-TV-6hB" secondAttribute="bottom" constant="16" id="wNi-ko-G0J"/>
+                            <constraint firstItem="AZy-gd-p9k" firstAttribute="leading" secondItem="vUq-xI-QEH" secondAttribute="leading" constant="16" id="xVk-CJ-9tr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vUq-xI-QEH" secondAttribute="bottom" id="Rw7-sb-d9i"/>
+                    <constraint firstItem="vUq-xI-QEH" firstAttribute="leading" secondItem="b8c-Fb-XHH" secondAttribute="leading" constant="8" id="WP3-NK-mAc"/>
+                    <constraint firstAttribute="trailing" secondItem="vUq-xI-QEH" secondAttribute="trailing" constant="8" id="bZV-Xq-Qiy"/>
+                    <constraint firstItem="vUq-xI-QEH" firstAttribute="top" secondItem="b8c-Fb-XHH" secondAttribute="top" id="cWe-bG-NBe"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="295" height="147"/>
+            <connections>
+                <outlet property="container" destination="vUq-xI-QEH" id="bTZ-w6-DkY"/>
+                <outlet property="image_avatar" destination="AZy-gd-p9k" id="UUz-vl-J1R"/>
+                <outlet property="lbl_author" destination="wDM-V8-5n2" id="tBR-JD-8BW"/>
+                <outlet property="lbl_content" destination="Hvu-TV-6hB" id="Mhb-zb-A3O"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="82.03125"/>
+        </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

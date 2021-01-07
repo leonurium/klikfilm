@@ -67,7 +67,7 @@ extension MovieTrailerCell: UICollectionViewDelegate, UICollectionViewDataSource
 extension MovieTrailerCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screen = UIScreen.main.bounds
-        let height: CGFloat = 200
+        let height: CGFloat = 300
         let width: CGFloat = screen.width
         return CGSize(width: width, height: height)
     }

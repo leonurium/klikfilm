@@ -20,4 +20,15 @@ class MovieInteractor: MoviePresenterToInteractor {
             }
         }
     }
+    
+    func getReview(movieID: Int) {
+        MovieWorker.shared.getReview(movie_id: movieID) { (result) in
+            switch result {
+            case .failure(let err):
+                self.presenter?.failGetReviews(title: LTitleAlert.error.rawValue, message: err.localizedDescription)
+            case .success(let res):
+                self.presenter?.didGetReviews(reviews: res.results)
+            }
+        }
+    }
 }
